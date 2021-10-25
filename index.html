@@ -4,7 +4,10 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA_Compatible" content = "IE-Edge">
         <meta name = "viewport" content  = "width=device-width, initial-scale = 1.0"> 
-        <title>Hannah Roy Homework 2</title>
+        <title>Hannah Roy Homework 3</title>
+
+        <!-- Add CSS -->
+        <link rel="stylesheet" href="./css/styles.css">
 
         <!--Add Favicon-->
         <link rel="shortcut icon" href="./img/d20_favicon.jpg" type="image/x-icon">
@@ -13,28 +16,29 @@
 
     <body>
         <header>
-            <h1>Home</h1>
             <h2>Welcome to Hannah Roy's Portfolio</h2>
-            <p>CSI 2520 HW2</p>
+            <p>CSI 2520 HW3</p>
         </header>
         
         <nav>
-            <hr>
+            <h1>Home</h1>
             <ul>
-                <li><a href = "./index.html"> Home </a></li>
+                <li><a  class = "active" href = "./index.html"> Home </a></li>
                 <li><a href = "./html/my_resume.html"> Resume </a> </li>
                 <li><a href = "./html/my_fun_facts.html"> Fun Facts </a> </li>
             </ul>
-            <hr>
         </nav>
 
-        <section>
-            <figure>
-                <!--Add photo-->
-                <img src = "./img/home_photo.jpg" width = "25%" height = "25%" alt = "A Picture of the Site Author 
-                with two sandhill cranes">
-                <figcaption>A Photo of the site creator with two sandhill cranes</figcaption>
-            </figure>
+        <main>
+            <section class = "picture_container">
+                <figure>
+                    <!--Add photo-->
+                    <img src = "./img/home_photo.jpg" width = "25%" height = "25%" alt = "A Picture of the Site Author 
+                    with two sandhill cranes">
+                    <figcaption>A Photo of the site creator with two sandhill cranes</figcaption>
+                </figure>
+            </section>
+
             <blockquote>
                 <p>
                     All that is gold does not glitter, <br>
@@ -44,38 +48,42 @@
                     -J.R.R. Tolkien
                 </p>
             </blockquote>
-        </section>
 
-        <section>
-            <h3>About Me</h3>
-            <p>
-                I am a student currently studying Information Technology and Graphic Design. I graduated from a high school early
-                college program after taking community college courses for several years before my freshman year of college.
-                I am also an artist, and I have been learning to create digital art using software such as Photoshop, Illustractor, 
-                and Clip Studio Paint.
-            </p>
-            <p>
-                I am interested in web design, graphic design, and video game concept art. I hope to eventually start
-                my own business to work as a freelancer designing websites, logos and icons, as well as creating
-                enviornment, costume and character concept art for video games. For more information about me, visit
-                <a href = "./html/my_resume.html"> my resume </a> and <a href = "./html/my_fun_facts.html"> my fun facts </a>
-                pages.
-            </p>
-        </section>
+            <section>
+                <h3>About Me</h3>
+                <p>
+                    I am a student currently studying Information Technology and Graphic Design. I graduated from a high school early
+                    college program after taking community college courses for several years before my freshman year of college.
+                    I am also an artist, and I have been learning to create digital art using software such as Photoshop, Illustractor, 
+                    and Clip Studio Paint.
+                </p>
+                <p>
+                    I am interested in web design, graphic design, and video game concept art. I hope to eventually start
+                    my own business to work as a freelancer designing websites, logos and icons, as well as creating
+                    enviornment, costume and character concept art for video games. For more information about me, visit
+                    <a href = "./html/my_resume.html"> my resume </a> and <a href = "./html/my_fun_facts.html"> my fun facts </a>
+                    pages.
+                </p>
+            </section>
 
-        <section>
-            <label for = "progress">Progress to IT Major with Graphic Design Minor</label> <br>
-            <progress id = "progress" value = "73" max = "100">73%</progress> <br>
-            <p>73%</p>
-        </section>
+            <section>
+                <label for = "progress">Progress to IT Major with Graphic Design Minor</label> <br>
+                <progress id = "progress" value = "73" max = "100">73%</progress> <br>
+                <p>73%</p>
+            </section>
+        </main>
 
-        <footer>
-            <hr>
-            &copy; 2021 <br>
-            <p>Oakland University</p>
-            <a href = "mailto:hroy@oakland.edu" aria-label = "Email Icon">
-                <i class="far fa-envelope fa-2x"></i></a>
-            <hr>
+        <footer class = "footer">
+            <!-- <hr> -->
+            <div class = "icon">
+                <a href = "mailto:hroy@oakland.edu" aria-label = "Email Icon">
+                    <i class="fa-solid fa-square-envelope fa-xl"></i></a>
+            </div>
+            <div class = "copy">
+                &copy; 2021 Hannah Roy<br>
+                <p>Oakland University</p>
+            </div>
+            <!-- <hr> -->
         </footer>
     </body>
 </html>

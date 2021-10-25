@@ -5,7 +5,9 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA_Compatible" content = "IE-Edge">
         <meta name = "viewport" content  = "width=device-width, initial-scale = 1.0"> 
-        <title>Hannah Roy Homework 2</title>
+        <title>Hannah Roy Homework 3</title>
+
+        <link rel="stylesheet" href="../css/resume_styles.css">
 
         <link rel="shortcut icon" href="../img/d20_favicon.jpg" type="image/x-icon">
         <script src="https://kit.fontawesome.com/a9c3ea6bcb.js" crossorigin="anonymous"></script>
@@ -13,20 +15,18 @@
 
     <body>
         <header>
-            <h1>Hannah Roy - Resume</h1>
-            <h2>hroy@oakland.edu</h2>
-            <p>CSI 2520 HW2</p>
+            <h3>CSI 2520 HW3</h3>
+            <p>hroy@oakland.edu</p>
         </header>
 
         <nav>
-            <hr>
-            <li><a href = "../index.html"> Home </a></li>
-            <li><a href = "./my_resume.html"> Resume </a> </li>
-            <li><a href = "./my_fun_facts.html"> Fun Facts </a> </li>
-            <hr>
+            <h1>Resume</h1>
+            <li class = "nav_btn"><a href = "./my_fun_facts.html"> Fun Facts </a> </li>
+            <li class = "nav_btn"><a class = "active"href = "./my_resume.html"> Resume </a> </li>
+            <li class = "nav_btn"><a href = "../index.html"> Home </a></li>
         </nav>
 
-        <section>
+        <section class = "objective">
             <h3>
                 Objective
             </h3>
@@ -35,7 +35,7 @@
             </p>
         </section>
 
-        <section>
+        <section class = "professional">
             <h3>Professional Experience</h3>
             <section>
                 <h4>Start date -- End Date, Job Role, Company Name, Location</h4>
@@ -46,7 +46,7 @@
             </section>
         </section>
 
-        <section>
+        <section class = "educational">
             <h3>Educational Experience</h3>
             <table id = "education" border = "1">
                 <tr>
@@ -66,20 +66,24 @@
             </table>
         </section>
 
-        <section>
+        <section class = "extracurricular">
             <h3>Extracurriculars and Hobbies</h3>
             <p>I am a digital artist and I enjoy drawing environments and character art. I also enjoy Krav Maga,
                 writing, watching TV, and playing video games.
             </p>
         </section>
 
-        <footer>
-            <hr>
-            &copy; 2021 <br>
-            <p>Oakland University</p>
-            <a href = "mailto:hroy@oakland.edu" aria-label = "Email Icon">
-                <i class="far fa-envelope fa-2x"></i></a>
-            <hr>
+        <footer class = "footer">
+            <!-- <hr> -->
+            <div class = "icon">
+                <a href = "mailto:hroy@oakland.edu" aria-label = "Email Icon">
+                    <i class="fa-solid fa-square-envelope fa-xl"></i></a>
+            </div>
+            <div class = "copy">
+                &copy; 2021 Hannah Roy<br>
+                <p>Oakland University</p>
+            </div>
+            <!-- <hr> -->
         </footer>
     </body>
 </html>
