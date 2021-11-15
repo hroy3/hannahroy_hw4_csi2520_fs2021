@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+
+    <link rel="stylesheet" href="../css/blog_styles.css">
+    <link rel="shortcut icon" href="../img/d20_favicon.jpg" type="image/x-icon">
+    <script src = "../js/blog2.js" defer></script>
+
+    <script src="https://kit.fontawesome.com/a9c3ea6bcb.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <header>
+        <h2>Welcome to Hannah Roy's Portfolio</h2>
+        <p>CSI 2520 HW4</p>
+    </header>
+    
+    <nav>
+        <h1>Blog</h1>
+        <ul>
+            <li><a href = "../index.html"> Home </a></li>
+            <li><a href = "../html/my_resume.html"> Resume </a> </li>
+            <li><a href = "../html/my_fun_facts.html"> Fun Facts </a> </li>
+            <li><a class = "active" href = "./blog.html">Blog</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <!-- Embed Multimedia Content -->
+        <div class = "blogPost">
+            <h2>Horizon: Forbidden West</h2>
+            <iframe  width="560" height="315" 
+                src="https://www.youtube.com/embed/wQATS4HOxdo" title="YouTube video player"
+                alt = "Horizon Forbidden West gameplay reveal video">
+            </iframe>
+
+        <!-- Description of Content -->
+            <article id = "article">
+                Horizon: Forbidden West is an upcoming PS4 and PS5 game by Guerilla Games Studio. Currently scheduled to be
+                released in February 2022, Horizon: Forbidden West is the sequel to Guerilla's 2017 RPG Horizon: Zero Dawn.
+                The gameplay reveal trailer shows new machines, locations, and abilities that will be in Forbidden West, as well as 
+                showing the game's updated graphics.
+                Personally, I hope to see characters from Horizon: Zero Dawn return in Forbidden West, and to resolve
+                some of the storylines that the previous game left open. A few characters have already been confirmed to return,
+                though very little of the plot of the new game has been revealed beyond what is shown in the original trailer and the 
+                above State of Play trailer. A major strength of the first Horizon: Zero Dawn game was its characters and storytelling,
+                so it would be good to see both return in the new game. I particularily like the way that Horizon: Zero Dawn handled
+                side quests; many RPGs tend to suffer from having too many sidequests that tend to get boring and repetitive, or add little
+                to the story, worldbuilding, or characters. HZD had fewer sidequests than most RPGs, but all of them were long, detailed,
+                and interesting to play through. I would like to see Horizon: Forbidden West follow the same idea.
+            </article>
+
+        </div>
+
+        <div id = "comments">
+            <!-- Add Comment Button -->
+            <button id = "addComment">Add a Comment</button>
+            <!-- <input type = "text" class = "commentText"> -->
+            <!-- <div id = randomDiv></div> -->
+        </div>
+        
+    </main>
+
+    <footer class = "footer">
+        <div class = "icon">
+            <a href = "mailto:hroy@oakland.edu" aria-label = "Email Icon">
+                <i class="fa-solid fa-square-envelope fa-xl"></i></a>
+        </div>
+        <div class = "copy">
+            &copy; 2021 Hannah Roy<br>
+            <p>Oakland University</p>
+        </div>
+    </footer>
+    
+</body>
+</html>
